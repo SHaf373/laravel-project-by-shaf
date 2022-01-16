@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentlogin</title>
+</head>
+<body>
+    <div class="container" id="admlog1">
+        <img src="student.png" alt="" >
+        <h1>Student</h1>
+        <?php require_once 'studentlogin.php'; ?>
+        <form action="studentlogin.php" method="post">
+            
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email"/>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password"/>
+              </div>
+   
+              <div class="form-group">
+                <button type="submit" class="button-84" name="login">Login</button>
+                <button type="button" class="button-84" onclick="parent.open('Studentsignup.html')" name="check">Signup</button>
+              
+              </div>
+              
+              
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>
